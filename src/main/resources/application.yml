@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-consumer
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 2101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+  instance:
+    lease-expiration-duration-in-seconds: 3
+    lease-renewal-interval-in-seconds: 1
